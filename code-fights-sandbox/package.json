@@ -1,0 +1,27 @@
+{
+    "name": "dashboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "private": true,
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lambda-local": "1.4.2"
+    },
+    "devDependencies": {
+        "@types/node": "7.0.4",
+        "npm-run-all": "4.0.0",
+        "ts-node": "2.1.0",
+        "tslint": "4.5.1",
+        "tslint-eslint-rules": "3.4.0",
+        "typescript": "2.1.4"
+    },
+    "scripts": {
+        "build": "tsc",
+        "main": "run-s build && node src/index.js",
+        "lint": "tslint -e \"**/node_modules/**\" -e \"**/*.d.ts\" \"**/*.ts\" \"**/*.tsx\"",
+        "shrink": "rm -rf node_modules && npm i --no-shrinkwrap && npm shrink --also=dev"
+    }
+}
