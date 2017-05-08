@@ -1,8 +1,10 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# log files
+*.log*
+
 # js files
-.js
-.js.map 
+*.js*
 
 # dependencies
 /node_modules
